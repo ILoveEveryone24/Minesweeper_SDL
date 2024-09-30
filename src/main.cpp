@@ -300,19 +300,19 @@ void init(std::list<int> &mines, mineBlock blocks[], TTF_Font &textFont, RenderW
 	SDL_Texture *winTexture = window.createTextureFromSurface(winText);
 	SDL_Texture *mineCountTexture = window.createTextureFromSurface(mineCountText);
 	SDL_Texture *timerTexture = window.createTextureFromSurface(timerText);
-	SDL_Texture *oneTexture = window.loadTexture("./one.png");
-	SDL_Texture *twoTexture = window.loadTexture("./two.png");
-	SDL_Texture *threeTexture = window.loadTexture("./three.png");
-	SDL_Texture *fourTexture = window.loadTexture("./four.png");
-	SDL_Texture *fiveTexture = window.loadTexture("./five.png");
-	SDL_Texture *sixTexture = window.loadTexture("./six.png");
-	SDL_Texture *sevenTexture = window.loadTexture("./seven.png");
-	SDL_Texture *eightTexture = window.loadTexture("./eight.png");
-	SDL_Texture *flagTexture = window.loadTexture("./flag.png");
-	SDL_Texture *mineTexture = window.loadTexture("./mine.png");
-	SDL_Texture *winButtonTexture = window.loadTexture("./win.png");
-	SDL_Texture *lostButtonTexture = window.loadTexture("./dead.png");
-	SDL_Texture *smileButtonTexture = window.loadTexture("./smile.png");
+	SDL_Texture *oneTexture = window.loadTexture("./images/one.png");
+	SDL_Texture *twoTexture = window.loadTexture("./images/two.png");
+	SDL_Texture *threeTexture = window.loadTexture("./images/three.png");
+	SDL_Texture *fourTexture = window.loadTexture("./images/four.png");
+	SDL_Texture *fiveTexture = window.loadTexture("./images/five.png");
+	SDL_Texture *sixTexture = window.loadTexture("./images/six.png");
+	SDL_Texture *sevenTexture = window.loadTexture("./images/seven.png");
+	SDL_Texture *eightTexture = window.loadTexture("./images/eight.png");
+	SDL_Texture *flagTexture = window.loadTexture("./images/flag.png");
+	SDL_Texture *mineTexture = window.loadTexture("./images/mine.png");
+	SDL_Texture *winButtonTexture = window.loadTexture("./images/win.png");
+	SDL_Texture *lostButtonTexture = window.loadTexture("./images/dead.png");
+	SDL_Texture *smileButtonTexture = window.loadTexture("./images/smile.png");
 
 	while(mines.size() < mineAmount){
 		int mine = rand() % (GRID_W * GRID_H);	
