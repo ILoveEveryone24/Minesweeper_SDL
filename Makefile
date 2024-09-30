@@ -1,6 +1,6 @@
 # Compiler and flags
 CXX = g++
-CXXFLAGS = -Wall -std=c++17 -O3 -march=native -mtune=native -flto -ffast-math -funroll-loops
+CXXFLAGS = -Wall -std=c++17
 
 # Directories
 SRCDIR = src
