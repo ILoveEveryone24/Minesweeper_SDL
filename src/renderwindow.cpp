@@ -2,7 +2,7 @@
 #include <SDL2/SDL_image.h>
 #include <iostream>
 
-#include "../include/RenderWindow.hpp"
+#include "../include/RenderWindow.h"
 
 RenderWindow::RenderWindow(const char* title, int w, int h)
 :window(NULL), renderer(NULL){
