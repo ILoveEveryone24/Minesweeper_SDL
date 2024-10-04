@@ -186,19 +186,25 @@ int main(int argc, char* args[]){
 	SDL_Texture *timerTexture = window.createTextureFromSurface(timerText);
 	SDL_Texture *mineCountTexture = window.createTextureFromSurface(mineCountText);
 	while(gameRunning){
-
 		time(&currentTime);
 		deltaT = currentTime - startTime;
+
+		/*	
+		 * FPS PRINTER
+		 *
 		if(deltaT < 1)
 			FPS++;
 		else{
-			startTime = currentTime;
 			std::cout << FPS << std::endl;
 			FPS = 0;
 		}
+		 *
+		 * FPS PRINTER
+		 */
 		
-		if(gameStarted)
-			if(deltaT >= 1){
+		if(deltaT >= 1){
+			startTime = currentTime;
+			if(gameStarted){
 				timer++;
 				if(timer > 999)
 					timer = 999;
@@ -213,7 +219,7 @@ int main(int argc, char* args[]){
 				
 				gameUI.setTimerTexture(timerTexture);
 			}
-		
+		}
 		
 		if(mineCountDiff != mineAmount - flagCount){
 			mineCountDiff = mineAmount - flagCount;
